@@ -36,7 +36,6 @@ export default {
   },
   created () {
     api.getHotCity().then(res => {
-      console.log(res.data.data)
       this.hotList = res.data.data
     })
     api.getRecentCity().then(res => {

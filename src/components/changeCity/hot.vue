@@ -14,7 +14,6 @@ export default {
   props: ['list', 'title'],
   methods: {
     changeCity (item) {
-      console.log(this.list)
       this.$store.dispatch('setPosition', item)
       this.$router.push({ name: 'index' })
     }
